@@ -47,7 +47,7 @@ class NNLayer:
         return z
 
     def non_linearity(self):
-        def sigmoid(x):
+        def softmax(x):
             # write your code here 
             #----------------------
             
@@ -56,9 +56,9 @@ class NNLayer:
 
         # compute sigmoid(z) here:
         #----------------------
-        sigmoid_z = None #update this with correct output
+        softmax_z = None #update this with correct output
 
-        return sigmoid_z
+        return softmax_z
 
 
 
@@ -67,5 +67,5 @@ if __name__ == "__main__":
     q4 = NNLayer()
     print("problem 4.1 : x^T = ", q4.x_transpose())
     print("problem 4.2 : z = Wx^T = ", q4.matmul())
-    print("problem 4.3 : sigmoid(z) = ", q4.non_linearity())
+    print("problem 4.3 : softmax(z) = ", q4.non_linearity())
     
