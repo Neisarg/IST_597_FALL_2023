@@ -54,7 +54,7 @@ class NNLayer:
             res = None #update this with correct output
             return res
 
-        # compute sigmoid(z) here:
+        # compute softmax(z) here:
         #----------------------
         softmax_z = None #update this with correct output
 
